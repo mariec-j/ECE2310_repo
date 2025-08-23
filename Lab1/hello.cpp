@@ -5,8 +5,6 @@ Using cout and printf it should just output:
 Hello World!
 Hello World again!
 ////////
-
-edited comment 
 */
 
 
