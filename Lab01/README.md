@@ -18,10 +18,10 @@ The following **bonus** features are implemented:
 ## Screenshot and/or Video Walkthrough
 
 ### Terminal commands screenshot
-![]("images01\Screenshot 2025-08-23 145120.png")
+![](<images01/Screenshot 2025-08-23 145120.png>)
 
 ### hello.cpp output on terminal  
-![]("Lab01\images01\Screenshot 2025-08-23 150121.png")
+![](<images01/Screenshot 2025-08-23 150121.png>)
 
 ### Notes:
 “pwd”
