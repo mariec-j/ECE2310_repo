@@ -26,12 +26,15 @@ The following **bonus** features are implemented:
 ### Notes:
 “pwd”
 - Outputs the path directory the terminal is looking into right now, which is like the direction of files the computer goes through to the file it’ll run.
+
 “ls”
 - Lists the contents in the folder in the directory.
 - It even says when it was last edited, and how many bytes the file is.
+
 “cd ..”
 - Goes back in the directory.
 - If the directory is in ‘...\a\b\c’, the directory after using the command goes to ‘...\a\b
+
 “cd Lab1”
 - Changes the directory to the folder name.
 - The folder must be within the directory.
