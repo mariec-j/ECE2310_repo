@@ -32,7 +32,7 @@ The following **bonus** features are implemented:
 - It even says when it was last edited, and how many bytes the file is.
 
 “cd ..”
-- Goes back in the directory.
+- Goes back in the directory (to the parent folder).
 - If the directory is in ‘...\a\b\c’, the directory after using the command goes to ‘...\a\b
 
 “cd Lab1”
