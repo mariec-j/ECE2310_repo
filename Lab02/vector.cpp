@@ -9,3 +9,64 @@
  * 
  */
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+/**
+ * @brief prints the elements in the vector and their memory locations
+ * 
+ * @param v - vector of integers
+ */
+void printMemVec(vector<int> v){
+    printf("In vector - Each int is worth %lu bytes\n", v.size());
+
+    for (int i = 0; i < v.size(); i++) {
+        printf("Value %i at Memory Location: %p\n", v[i], &v[i]);
+    }
+}
+
+/**
+ * @brief increments all of the elements in v by 10
+ * 
+ * @param v - address to a vector of integers
+ */
+void incVecBy10(vector<int> v){
+        for(int i = 0; i < v.size(); i++) {
+        v[i] += 10;
+    }
+}
+
+
+int main() {
+    // create a constant integer called SIZE that is of value 5
+    const int SIZE = 5;
+    
+    // create a vector of integers called vec that can hold up to 5 elements
+    vector<int> vec(5);
+
+    // use a for to populate vec with the values 100 to 1004
+    for(int i = 0; i < SIZE; i++)
+        vec[i] = 100 + i;
+    
+    printf("Before Increment -------------------\n");
+    printMemVec(vec);
+
+    incVecBy10(vec);
+    printf("After Increment  -------------------\n");
+    printMemVec(vec);
+
+    // removing last element of vec
+    vec.pop_back();
+
+    printf("After Pop --------------------------\n");
+    printMemVec(vec);
+
+    // // append 101 and 102 at the end of vec
+
+
+    // printf("After Push -------------------------\n");
+    // printMemVec(vec);
+
+    return 0;
+}
