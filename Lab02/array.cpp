@@ -1,0 +1,41 @@
+/**
+ * @file array.cpp
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2025-09-10
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
+#include <iostream>
+#include <vector>
+using namespace std;
+/**
+ * @brief prints the elements in the array and their memory locations
+ * 
+ * @param arr    -> array of int
+ * @param size   -> number of elements in the array
+ */
+void printMemArr(const int arr[], int size) {
+
+    printf("Array - Each int is worth %lu bytes\n", sizeof(arr[0]));
+
+    for (int i = 0; i < size; i++) {
+        printf("Value %i at Memory Location: %p\n", arr[i], arr+1);
+    }
+    
+}
+
+/**
+ * @brief 
+ * 
+ * @param arr    -> array of int
+ * @param size   -> num of elements
+ */
+void incArrayby10(int arr[], int size) {
+    for(int i = 0; i < size; i++) {
+        arr[i] += 10;
+    }
+}
