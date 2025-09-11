@@ -22,10 +22,10 @@ The following **bonus** features are implemented:
 
 ## Screenshot and/or Video Walkthrough
 
-### Terminal commands screenshot
-![](<images02\array_Output.png>)
+### array.cpp output on terminal
+![](<src/ECE2310/Object-Oriented-Programming-C-Plus-Plus_Repo/Lab02/images02/array_Output.png>)
 
-### hello.cpp output on terminal  
-![](<images02\vector_Output.png>)
+### vector.cpp output on terminal  
+![](<src/ECE2310/Object-Oriented-Programming-C-Plus-Plus_Repo/Lab02/images02/array_Output.png>)
 
 ### Notes:
