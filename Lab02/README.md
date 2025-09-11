@@ -23,9 +23,9 @@ The following **bonus** features are implemented:
 ## Screenshot and/or Video Walkthrough
 
 ### array.cpp output on terminal
-![](<src/ECE2310/Object-Oriented-Programming-C-Plus-Plus_Repo/Lab02/images02/array_Output.png>)
+![](<images02/array_Output.png>)
 
 ### vector.cpp output on terminal  
-![](<src/ECE2310/Object-Oriented-Programming-C-Plus-Plus_Repo/Lab02/images02/array_Output.png>)
+![](<images02/vector_Output.png>)
 
 ### Notes:
