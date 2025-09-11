@@ -1,8 +1,7 @@
 /**
  * @file vector.cpp
- * @author your name (you@domain.com)
+ * @author Marie Jardiniano
  * @brief 
- * @version 0.1
  * @date 2025-09-10
  * 
  * @copyright Copyright (c) 2025
@@ -28,7 +27,7 @@ void printMemVec(vector<int> v) {
 }
 
 /**
- * @brief increments all of the elements in v by 10
+ * @brief increments all of the elements in int vector v by 10
  * 
  * @param v - address to a vector of integers
  */

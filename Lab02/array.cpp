@@ -20,7 +20,7 @@ using namespace std;
  */
 void printMemArr(const int arr[], int size) {
 
-    printf("Array - Each int is worth %lu bytes\n", sizeof(arr[0]));
+    printf("Array - Each int is worth %lu bytes\n", sizeof(arr[0])); //sizeof returns an unsigned long
 
     for (int i = 0; i < size; i++) {
         printf("Value %i at Memory Location: %p\n", arr[i], arr+i);
@@ -44,15 +44,15 @@ int main () {
     const int SIZE = 5;
     int arr[SIZE]; 
     for(int i = 0; i < SIZE; i++)
-        arr[i] = 100 + i;
+        arr[i] = 100 + i; //arr [100, 101, 102, 103, 104]
     
-    printf("Before ----------------------\n");
+    printf("Before -------------------------\n");
     printMemArr(arr, SIZE);
 
     //change the value
     incArrayBy10(arr,SIZE);
 
-    printf("After  ----------------------\n");
+    printf("After --------------------------\n");
     printMemArr(arr,SIZE);
 
     return 0;
