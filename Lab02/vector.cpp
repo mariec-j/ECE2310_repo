@@ -18,12 +18,13 @@ using namespace std;
  * 
  * @param v - vector of integers
  */
-void printMemVec(vector<int> v){
+void printMemVec(vector<int> v) {
     printf("In vector - Each int is worth %lu bytes\n", v.size());
 
     for (int i = 0; i < v.size(); i++) {
         printf("Value %i at Memory Location: %p\n", v[i], &v[i]);
     }
+    printf("\n");
 }
 
 /**
@@ -31,10 +32,12 @@ void printMemVec(vector<int> v){
  * 
  * @param v - address to a vector of integers
  */
-void incVecBy10(vector<int> v){
+void incVecBy10(vector<int> v) {
         for(int i = 0; i < v.size(); i++) {
-        v[i] += 10;
+        printf("%i\n", v[i]);
+        v[i] =  v[i] + 10;
     }
+    printf("\n");
 }
 
 
@@ -62,11 +65,12 @@ int main() {
     printf("After Pop --------------------------\n");
     printMemVec(vec);
 
-    // // append 101 and 102 at the end of vec
+    // append 101 and 102 at the end of vec
+    vec.push_back(101);
+    vec.push_back(102);
 
-
-    // printf("After Push -------------------------\n");
-    // printMemVec(vec);
+    printf("After Push -------------------------\n");
+    printMemVec(vec);
 
     return 0;
 }
