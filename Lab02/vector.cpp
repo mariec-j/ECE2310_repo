@@ -19,7 +19,7 @@ using namespace std;
  * @param v - vector of integers
  */
 void printMemVec(vector<int> v) {
-    printf("In vector - Each int is worth %lu bytes\n", v.size());
+    printf("In vector - Each int is worth %lu bytes\n", sizeof(v[0]));
 
     for (int i = 0; i < v.size(); i++) {
         printf("Value %i at Memory Location: %p\n", v[i], &v[i]);
@@ -32,12 +32,15 @@ void printMemVec(vector<int> v) {
  * 
  * @param v - address to a vector of integers
  */
-void incVecBy10(vector<int> v) {
-        for(int i = 0; i < v.size(); i++) {
-        printf("%i\n", v[i]);
-        v[i] =  v[i] + 10;
+void incVecBy10(vector<int> & v) {
+    
+        for(size_t i = 0; i < v.size(); i++) {
+        int* v_ptr = &v[i];
+        //printf("v is: %i \nv_ptr is now: %p\n", v, v_ptr);
+        *v_ptr = *v_ptr + 10;
+        //printf("%i\n", v[i]);
     }
-    printf("\n");
+    //printf("\n");
 }
 
 
@@ -52,24 +55,25 @@ int main() {
     for(int i = 0; i < SIZE; i++)
         vec[i] = 100 + i;
     
-    printf("Before Increment -------------------\n");
+
+    printf("\nBefore Increment ---------------------\n");
     printMemVec(vec);
 
     incVecBy10(vec);
-    printf("After Increment  -------------------\n");
+    printf("After Increment ----------------------\n");
     printMemVec(vec);
 
     // removing last element of vec
     vec.pop_back();
 
-    printf("After Pop --------------------------\n");
+    printf("After Pop ----------------------------\n");
     printMemVec(vec);
 
     // append 101 and 102 at the end of vec
     vec.push_back(101);
     vec.push_back(102);
 
-    printf("After Push -------------------------\n");
+    printf("After Push ---------------------------\n");
     printMemVec(vec);
 
     return 0;
