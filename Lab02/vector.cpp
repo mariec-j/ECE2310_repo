@@ -31,12 +31,12 @@ void printMemVec(vector<int> v) {
  * 
  * @param v - address to a vector of integers
  */
-void incVecBy10(vector<int> & v) {
+void incVecBy10(vector<int> &v) {
     
         for(size_t i = 0; i < v.size(); i++) {
-        int* v_ptr = &v[i];
+        //int* v_ptr = &v[i];
         //printf("v is: %i \nv_ptr is now: %p\n", v, v_ptr);
-        *v_ptr = *v_ptr + 10;
+        v[i] = v[i] + 10;
         //printf("%i\n", v[i]);
     }
     //printf("\n");
