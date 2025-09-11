@@ -13,8 +13,8 @@ Time spent: **3** hours spent in total
 
 The following **required** features are completed:
 
-- [x] array.cpp is created, coded, and has a working terminal output
-- [x] vector.cpp is coded and prints what is expected on terminal
+- [x] [array.cpp](array.cpp) is created, coded, and has a working terminal output
+- [x] [vector.cpp](vector.cpp) is coded and prints what is expected on terminal
 - [x] screenshots of both terminal outputs are provided
 
 The following **bonus** features are implemented:
