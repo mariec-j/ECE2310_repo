@@ -18,7 +18,7 @@ class RPG {
             int level);
 
         //mutators
-            bool isAlive() const;
+            bool const isAlive();
             void setHitsTaken(int new_hits);
         
         //accessors

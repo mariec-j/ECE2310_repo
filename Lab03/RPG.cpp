@@ -35,17 +35,29 @@ RPG::RPG(string name, int hits_taken, float luck, float exp, int level) {
  * @return true 
  * @return false 
  */
-bool const isAlive() {
-
+bool const RPG::isAlive() {
+    if (hits_taken < MAX_HITS_TAKEN)
+        return true;
+    return false;
 }
 
-void setHitsTaken(int new_hits) {
-
+void RPG::setHitsTaken(int new_hits) {
+    this->hits_taken = new_hits;
 }
 
 //accessors
-    string const getName();
-    int const getHitsTaken();
-    float const getLuck();
-    float const getExp();
-    float const getLevel();
+    
+    // return player name
+    string const RPG::getName() { return name; }
+    
+    // return player's hits taken
+    int const RPG::getHitsTaken() { return hits_taken; }
+    
+    // return player's luck stat
+    float const RPG::getLuck(){ return luck; }
+    
+    // return player's exp count
+    float const RPG::getExp() { return exp; }
+
+    // return player level
+    float const RPG::getLevel() { return level; }
