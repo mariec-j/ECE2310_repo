@@ -12,7 +12,7 @@ RPG::RPG() {
 }
 
 /**
- * @brief Construct a new RPG::RPG object
+ * @brief Overloaded onstructor for a new RPG::RPG object
  * 
  * @param name 
  * @param hits_taken 
@@ -30,10 +30,12 @@ RPG::RPG(string name, int hits_taken, float luck, float exp, int level) {
 
 //mutators
 /**
- * @brief 
+ * @brief returns whether 
+ * hits_taken is less than MAX_HITS TAKEN...
+ * In other words, player living status:
  * 
- * @return true 
- * @return false 
+ * @return true : player is alive
+ * @return false : player is dead
  */
 bool const RPG::isAlive() {
     if (hits_taken < MAX_HITS_TAKEN)
@@ -41,6 +43,11 @@ bool const RPG::isAlive() {
     return false;
 }
 
+/**
+ * @brief sets hits_taken to new_hits
+ * 
+ * @param new_hits 
+ */
 void RPG::setHitsTaken(int new_hits) {
     this->hits_taken = new_hits;
 }
