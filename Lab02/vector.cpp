@@ -33,7 +33,7 @@ void printMemVec(vector<int> v) {
  */
 void incVecBy10(vector<int> &v) {
     
-        for(size_t i = 0; i < v.size(); i++) {
+        for(int i = 0; i < v.size(); i++) {
         //int* v_ptr = &v[i];
         //printf("v is: %i \nv_ptr is now: %p\n", v, v_ptr);
         v[i] = v[i] + 10;
