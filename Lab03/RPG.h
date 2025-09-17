@@ -9,7 +9,7 @@ const float HIT_FACTOR = 0.05;
 const int MAX_HITS_TAKEN = 3;
 class RPG {
     public:
-    // constructors
+        // constructors
         RPG();
         RPG(string name, 
             int hits_taken, 
@@ -34,6 +34,5 @@ class RPG {
             float luck;
             float exp;
             int level;
-
 };
 #endif RPG_H
