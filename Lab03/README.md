@@ -8,6 +8,8 @@ is made from a .h and .cpp files, and is tested on the main.cpp file.
 
 Time spent: **2** hours spent in total
 
+
+
 ## Features
 
 The following **required** features are completed:
@@ -16,7 +18,6 @@ The following **required** features are completed:
 - [x] Make RPG.cpp
 - [x] Make main.cpp that includes "RPG.h"
 
-The following **bonus** features are implemented:
 
 
 ## Screenshot and/or Video Walkthrough
@@ -32,6 +33,8 @@ The following **bonus** features are implemented:
 
 - Default constructor actually had values for the object
 - Also got to test if isAlive() works, and it does
+
+
 
 ### Notes:
 - Default constructor that didn't have any initializations for the object variables 
