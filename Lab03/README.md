@@ -1,7 +1,9 @@
 # About Me
 
 ## Objective
-Insert explaination about making the RPG class
+From a UML, we're creating a class called "RPG." Students are expected to 
+use the idea of accessibilty with scope and/or encapsulation. The class 
+is made from a .h and .cpp files, and is tested on the main.cpp file.
 
 
 Time spent: **2** hours spent in total
