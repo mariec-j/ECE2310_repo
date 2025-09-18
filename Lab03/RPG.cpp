@@ -8,8 +8,7 @@ using namespace std;
  * @brief Construct a new RPG::RPG object
  * 
  */
-RPG::RPG() {
-}
+RPG::RPG() {}
 
 /**
  * @brief Overloaded onstructor for a new RPG::RPG object

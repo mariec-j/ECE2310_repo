@@ -9,11 +9,13 @@ int main() {
 
     // printing p1's stats
     printf("[ %s Current Status ]\n", p1.getName().c_str());
-    printf("Hits Taken: %i \nLuck: %f \nExp: %f \nLevel: %i\n\n", p1.getHitsTaken(), p1.getLuck(), p1.getExp(), p1.getLevel());
+    printf("Hits Taken: %i \nLuck: %f \nExp: %f \nLevel: %i\n\n", 
+    p1.getHitsTaken(), p1.getLuck(), p1.getExp(), p1.getLevel());
 
     // printing p2's stats
     printf("[ %s Current Status ]\n", p2.getName().c_str());
-    printf("Hits Taken: %i \nLuck: %f \nExp: %f \nLevel: %i\n\n", p2.getHitsTaken(), p2.getLuck(), p2.getExp(), p2.getLevel());
+    printf("Hits Taken: %i \nLuck: %f \nExp: %f \nLevel: %i\n\n", 
+    p2.getHitsTaken(), p2.getLuck(), p2.getExp(), p2.getLevel());
 
     // Calling setHitsTaken(new_hit) for both p1 and p2
     p1.setHitsTaken(2);
