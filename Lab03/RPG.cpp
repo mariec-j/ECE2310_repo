@@ -27,7 +27,7 @@ RPG::RPG(string name, int hits_taken, float luck, float exp, int level) {
     this->level = level;
 }
 
-//mutators
+// mutators
 /**
  * @brief returns whether 
  * hits_taken is less than MAX_HITS TAKEN...
