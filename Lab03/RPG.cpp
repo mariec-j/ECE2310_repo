@@ -3,7 +3,7 @@
 #include "RPG.h"
 using namespace std;
 
-//constructors
+// -------- constructors --------
 /**
  * @brief Construct a new RPG::RPG object
  * 
@@ -27,7 +27,7 @@ RPG::RPG(string name, int hits_taken, float luck, float exp, int level) {
     this->level = level;
 }
 
-// mutators
+// -------- mutators --------
 /**
  * @brief returns whether 
  * hits_taken is less than MAX_HITS TAKEN...
@@ -51,7 +51,7 @@ void RPG::setHitsTaken(int new_hits) {
     this->hits_taken = new_hits;
 }
 
-//accessors
+// -------- accessors --------
     
     // return player name
     string const RPG::getName() { return name; }
