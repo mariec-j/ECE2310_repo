@@ -27,7 +27,7 @@ The following **bonus** features are implemented:
 - Default constructor had no initializations for the private variables
 - I also didn't test if isAlive() outputs false correctly
 
-###
+### second main.cpp output test
 ![Another pic of terminal after running main.exe](<images03/Screenshot 2025-09-18 122511.png>)
 
 - Default constructor actually had values for the object
