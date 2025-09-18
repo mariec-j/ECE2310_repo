@@ -36,7 +36,7 @@ The following **required** features are completed:
 
 
 
-### Notes:
+## Notes:
 - Default constructor that didn't have any initializations for the object variables 
 gives a number to the parameters that seems kinda random
     - I still don't really know what the numbers mean, but online says they're
