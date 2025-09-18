@@ -29,7 +29,7 @@ The following **required** features are completed:
 - I also didn't test if isAlive() outputs false correctly
 
 ### second main.cpp output test
-![Another pic of terminal after running main.exe](<images03/Screenshot 2025-09-18 122511.png>)
+![Another pic of terminal after running main.exe](<images03/Screenshot 2025-09-18 151707.png>)
 
 - Default constructor actually had values for the object
 - Also got to test if isAlive() works, and it does
