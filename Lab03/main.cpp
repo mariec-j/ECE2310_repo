@@ -19,7 +19,7 @@ int main() {
 
     // Calling setHitsTaken(new_hit) for both p1 and p2
     p1.setHitsTaken(2);
-    p2.setHitsTaken(1);
+    p2.setHitsTaken(5);
 
     cout << "P1 hits taken: " << p1.getHitsTaken() << endl;
     cout << "P2 hits taken: " << p2.getHitsTaken() << endl;

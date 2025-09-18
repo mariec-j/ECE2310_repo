@@ -8,7 +8,13 @@ using namespace std;
  * @brief Construct a new RPG::RPG object
  * 
  */
-RPG::RPG() {}
+RPG::RPG() {
+    this->name = "";
+    this->hits_taken = 0;
+    this->luck = 0.1;
+    this->exp = 0;
+    this->level = 1;
+}
 
 /**
  * @brief Overloaded onstructor for a new RPG::RPG object
