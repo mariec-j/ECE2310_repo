@@ -9,10 +9,10 @@ using namespace std;
  * 
  */
 RPG::RPG() {
-    this->name = "";
+    this->name = "NPC";
     this->hits_taken = 0;
     this->luck = 0.1;
-    this->exp = 0;
+    this->exp = 50.0    ;
     this->level = 1;
 }
 
