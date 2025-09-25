@@ -26,7 +26,7 @@ class RPG {
             int const getHitsTaken();
             float const getLuck();
             float const getExp();
-            float const getLevel();
+            int const getLevel();
 
         private:
             string name;

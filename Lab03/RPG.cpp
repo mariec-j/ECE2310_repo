@@ -12,7 +12,7 @@ RPG::RPG() {
     this->name = "NPC";
     this->hits_taken = 0;
     this->luck = 0.1;
-    this->exp = 50.0    ;
+    this->exp = 50.0;
     this->level = 1;
 }
 
@@ -72,4 +72,4 @@ void RPG::setHitsTaken(int new_hits) {
     float const RPG::getExp() { return exp; }
 
     // return player level
-    float const RPG::getLevel() { return level; }
+    int const RPG::getLevel() { return level; }
