@@ -59,17 +59,17 @@ void RPG::setHitsTaken(int new_hits) {
 
 // -------- accessors --------
     
-    // return player name
-    string const RPG::getName() { return name; }
-    
-    // return player's hits taken
-    int const RPG::getHitsTaken() { return hits_taken; }
-    
-    // return player's luck stat
-    float const RPG::getLuck(){ return luck; }
-    
-    // return player's exp count
-    float const RPG::getExp() { return exp; }
+// return player name
+string const RPG::getName() { return name; }
 
-    // return player level
-    int const RPG::getLevel() { return level; }
+// return player's hits taken
+int const RPG::getHitsTaken() { return hits_taken; }
+
+// return player's luck stat
+float const RPG::getLuck(){ return luck; }
+
+// return player's exp count
+float const RPG::getExp() { return exp; }
+
+// return player level
+int const RPG::getLevel() { return level; }
