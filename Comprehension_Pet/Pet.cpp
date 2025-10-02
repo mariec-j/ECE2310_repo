@@ -21,7 +21,7 @@ Pet::Pet(string name, int age, string owner, bool isHouseTrained) {
 //mutators
 void Pet::updateName(string name) { this->name = name; }
 void Pet::updateAge (int age) { this->age = age;}
-void Pet::updateOwner (string adopter) { this->owner = owner; }
+void Pet::updateOwner (string adopter) { this->owner = adopter; }
 void Pet::setHouseTrained() { this->isHouseTrained = 1; }
 
 //accessors

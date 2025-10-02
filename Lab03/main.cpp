@@ -21,8 +21,8 @@ int main() {
     p1.setHitsTaken(2);
     p2.setHitsTaken(5);
 
-    cout << p2.getName() << " hits taken: " << p1.getHitsTaken() << endl;
-    cout << p2.getName() << " hits taken: " << p2.getHitsTaken() << endl;
+    cout << p1.getName() << " hits taken: " << p1.getHitsTaken() << endl;
+    cout << p2.getName() << " hits taken: " << p2.getHitsTaken() << endl << endl;
 
     cout << "0 is dead, 1 is alive" << endl;
     cout << p1.getName() << ": " << p1.isAlive() << endl;
