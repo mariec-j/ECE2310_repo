@@ -18,21 +18,21 @@ class RPG {
             int level);
 
         //mutators
-            bool const isAlive();
-            void setHitsTaken(int new_hits);
+        bool const isAlive();
+        void setHitsTaken(int new_hits);
         
         //accessors
-            string const getName();
-            int const getHitsTaken();
-            float const getLuck();
-            float const getExp();
-            int const getLevel();
+        string const getName();
+        int const getHitsTaken();
+        float const getLuck();
+        float const getExp();
+        int const getLevel();
 
-        private:
-            string name;
-            int hits_taken;
-            float luck;
-            float exp;
-            int level;
+    private:
+        string name;
+        int hits_taken;
+        float luck;
+        float exp;
+        int level;
 };
 #endif RPG_H
