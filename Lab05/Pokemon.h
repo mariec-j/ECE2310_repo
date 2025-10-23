@@ -8,16 +8,16 @@ using namespace std;
 class Pokemon {
     public:
     // ------------ CONSTRUCTORS ------------
-    Pokemon();
-    Pokemon(string name, int hp, int att, int def, vector<string> type);
+        Pokemon();
+        Pokemon(string name, int hp, int att, int def, vector<string> type);
 
     // ------------ MUTATORS ------------
-    virtual void speak();
-    virtual void printStats();
+        virtual void speak();
+        virtual void printStats();
 
     // ------------ ACCESSORS ------------
 
-    private:
+    protected:
         string name;
         int hp;
         int attack;
