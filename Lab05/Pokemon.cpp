@@ -1,8 +1,4 @@
-#include <iostream>
 #include "Pokemon.h"
-#include <string>
-#include <stdio.h>
-#include <vector>
 
 /**
  * @brief Construct a new Pokemon:: Pokemon object
@@ -40,11 +36,11 @@ void Pokemon::speak() {
 }
 
 /**
- * @brief print
+ * @brief printing class vari
  * 
  */
 void Pokemon:: printStats() {
-    printf("Name: %s \nHP: %i \nDEF: %i \nATT: %i \n", name, hp, defense, attack);
+    printf("Name: %s \nHP: %i \nDEF: %i \nATT: %i \n", name.c_str(), hp, defense, attack);
     cout << "Type: \n\t";
     for (int i = 0; i < type.size(); i++) {
         cout << type[i] << ",\t";

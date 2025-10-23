@@ -1,8 +1,10 @@
 #ifndef POKEMON_H
 #define POKEMON_H
 
+#include <iostream>
 #include <string>
 #include <vector>
+#include <stdio.h>
 using namespace std;
 
 class Pokemon {
@@ -12,7 +14,7 @@ class Pokemon {
         Pokemon(string name, int hp, int att, int def, vector<string> type);
 
     // ------------ MUTATORS ------------
-        virtual void speak();
+        void speak();
         virtual void printStats();
 
     // ------------ ACCESSORS ------------
