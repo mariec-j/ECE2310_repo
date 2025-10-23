@@ -7,7 +7,7 @@ Comprehension questions are provided in the actual Canvas assignment,
 so they are not provided here (i do not feel like adding it here).
 
 
-Time spent: **3** hours spent in total
+Time spent: **4** hours spent in total
 (probably could've been less than 1.5... had i
 not distracted myself with getting makefile to work)
 
