@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     // Charmander first = Charmander();
     vector<string> pokemonType;
-    pokemonType.pushback("Fire");
+    pokemonType.push_back("Fire");
     
     vector<string> skills;
     skills.push_back("Growl");
@@ -32,6 +32,6 @@ int main() {
     // Charmander
     cout << "\n------------ Print Stats ------------\n";
     charlie.printStats();
-    
+
     return 0;
 }
