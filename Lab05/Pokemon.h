@@ -19,7 +19,7 @@ class Pokemon {
 
     // ------------ ACCESSORS ------------
 
-    private:
+    protected:
         string name;
         int hp;
         int attack;
