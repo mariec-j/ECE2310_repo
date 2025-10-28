@@ -78,20 +78,25 @@ int const RPG::getLevel() { return level; }
  * 
  * @param name 
  */
-void setName(string name) {
-
+void RPG::setName(string name) {
+    this->name = name;
 }
 
 /**
- * @brief increaase RPG's experience by 50
+ * @brief increase RPG's experience by 50
  *        After updating...
  *       if RPG's experience is >= 100.0:
  *       increaase RPG's level by 1, 
  *       reset experience to 0, 
  *       increase luck by 0.1
  */
-void updateExpLevel() {
-
+void RPG::updateExpLevel() {
+    exp = exp + 50.0;
+    if (exp >= 100.0) {
+        level++;
+        exp = 0;
+        luck = luck + 0.1;
+    }    
 }
 
 /**
@@ -103,7 +108,7 @@ void updateExpLevel() {
  * 
  * @param opponent 
  */
-void attack(RPG* opponent) {
+void RPG::attack(RPG* opponent) {
     random_device rd;
     mt19937 gen(rd());
     uniform_real_distribution<double> dis(0.1, 1.0);
@@ -112,5 +117,9 @@ void attack(RPG* opponent) {
 
     //create a bool called hit
     // hit true if random_num > HIT_FACTOR * opponent's luck
+    bool hit = (random_num > (HIT_FACTOR * opponent->getLuck()))? 1:0;
+
     // if hit true, call updateHitsTakento increase opponent's hits taken
+    if (hit)
+        opponent->setHitsTaken(opponent->getHitsTaken()+1);
 }
