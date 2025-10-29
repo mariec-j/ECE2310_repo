@@ -1,10 +1,14 @@
 # About Me: Lab04
 
 ## Objective
+A continuation of Lab03. Students will create methods with parameters that take in 
+pointers. They will learn the difference between pass by value and pass by reference 
+calls and implement them in the object from the previous lab. The data structure,
+set, is also explored a little since it will be used as well as vector
+for the Game class.
 
 
-
-Time spent: **4** hours spent in total
+Time spent: **4-5** hours spent in total
 
 
 
@@ -12,27 +16,23 @@ Time spent: **4** hours spent in total
 
 The following **required** features are completed:
 
-- [x] 
-
+- [x] Create and finish the RPG.h and RPG.cpp files
+- [x] Create and finish the Game.h and Game.cpp files
+- [x] Create main.cpp and use it to test if the class files operate
 
 
 ## Screenshot and/or Video Walkthrough
 
 ### main.cpp's output on terminal
-![](<>)
+![](<images04/mainImage.png>)
 
-- 
-
-### second main.cpp output test
-![](<>)
-
-- 
-
-
+- The first line including `live players: ...` was leftover from debugging oopsies
+- Is there like, conventions about taking out debugging stuff?
 
 ## Assignment Notes:
 
-- 
+- I remember wanting to write something down here but then i got sidetracked and forgot
+
 
 ## Debug Notes:
 

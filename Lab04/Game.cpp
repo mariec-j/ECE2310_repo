@@ -22,9 +22,9 @@ void Game::generatePlayers(int n) {
         players[i]->setName(npc_name);
         live_players.insert(i);
     }
-    cout << "live_players: ";
-    for (int p : live_players) cout << p << " ";
-    cout << endl;    
+    // cout << "live_players: ";
+    // for (int p : live_players) cout << p << " ";
+    // cout << endl;    
 }
 
 /**
