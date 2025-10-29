@@ -22,6 +22,9 @@ void Game::generatePlayers(int n) {
         players[i]->setName(npc_name);
         live_players.insert(i);
     }
+    cout << "live_players: ";
+    for (int p : live_players) cout << p << " ";
+    cout << endl;    
 }
 
 /**
@@ -31,8 +34,8 @@ void Game::generatePlayers(int n) {
  * @return int = index for vector, players 
  */
 int Game::selectPlayer() {
-    random_device rd;
-    mt19937 gen(rd());
+    static random_device rd;
+    static mt19937 gen(rd());
     // make a distribution of all ints of 0 up to live_players.size() - 1 
     uniform_int_distribution<> dist(0, live_players.size() - 1);
 
@@ -91,7 +94,7 @@ void Game::battleRound() {
     RPG* player2 = players[playerIndex2];
 
     // while both players are alive call player1->attack(player2) and vice versa
-    while (player1->isAlive() || player2->isAlive()) {
+    while (player1->isAlive() && player2->isAlive()) {
         player1->attack(player2);
         player2->attack(player1);
     }
@@ -126,6 +129,6 @@ void Game::printFinalResults() {
  * @brief Destroy the Game:: Game object
  * 
  */
-Game::~Game(){
+Game::~Game() {
 
 }

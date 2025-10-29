@@ -20,6 +20,8 @@ class Game {
         
         void printFinalResults();
 
+        ~Game();
+
     private:
         vector<RPG*> players;
         set<int> live_players;

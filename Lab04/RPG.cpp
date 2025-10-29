@@ -131,9 +131,11 @@ void RPG::attack(RPG* opponent) {
  */
 void RPG::printStats() {
     cout << "Name: " << getName() << "\tHits Taken: " << getHitsTaken() 
-    << "\tLuck: " << getLuck() << "\tExp: " << getExp() << "\nLevel: " << getLevel << "\tStatus: ";
+    << "\tLuck: " << getLuck() << "\tExp: " << getExp() << "\tLevel: " << getLevel() << "\tStatus: ";
     
     string AoD = (isAlive())? "Alive":"Dead";
 
     cout << AoD << endl;
 }
+
+RPG::~RPG() {}

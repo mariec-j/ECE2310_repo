@@ -36,6 +36,9 @@ class RPG {
         void attack(RPG* opponent);
         void printStats();
 
+        // destructor
+        ~RPG();
+
     private:
         string name;
         int hits_taken;
@@ -43,4 +46,5 @@ class RPG {
         float exp;
         int level;
 };
-#endif RPG_H
+
+#endif
