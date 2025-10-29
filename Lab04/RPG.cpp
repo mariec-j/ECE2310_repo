@@ -91,11 +91,11 @@ void RPG::setName(string name) {
  *       increase luck by 0.1
  */
 void RPG::updateExpLevel() {
-    exp = exp + 50.0;
+    exp += 50.0;
     if (exp >= 100.0) {
         level++;
         exp = 0;
-        luck = luck + 0.1;
+        luck += 0.1;
     }    
 }
 
@@ -122,4 +122,18 @@ void RPG::attack(RPG* opponent) {
     // if hit true, call updateHitsTakento increase opponent's hits taken
     if (hit)
         opponent->setHitsTaken(opponent->getHitsTaken()+1);
+}
+
+/**
+ * @brief prints in format:
+ * "Name: NPC_X    Hits Taken: X    Luck: 0.X000    Exp: X0.00      Level: X    Status: Alive/Dead
+ * 
+ */
+void RPG::printStats() {
+    cout << "Name: " << getName() << "\tHits Taken: " << getHitsTaken() 
+    << "\tLuck: " << getLuck() << "\tExp: " << getExp() << "\nLevel: " << getLevel << "\tStatus: ";
+    
+    string AoD = (isAlive())? "Alive":"Dead";
+
+    cout << AoD << endl;
 }

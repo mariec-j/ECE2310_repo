@@ -34,6 +34,7 @@ class RPG {
         void setName(string name);
         void updateExpLevel();
         void attack(RPG* opponent);
+        void printStats();
 
     private:
         string name;
