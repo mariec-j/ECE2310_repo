@@ -109,11 +109,11 @@ void RPG::updateExpLevel() {
  * @param opponent 
  */
 void RPG::attack(RPG* opponent) {
-    random_device rd;
-    mt19937 gen(rd());
+    static random_device rand;
+    static mt19937 gener(rand()); // seed with random, is static throughout run
     uniform_real_distribution<double> dis(0.1, 1.0);
 
-    float random_num = dis(gen);
+    float random_num = dis(gener);
 
     //create a bool called hit
     // hit true if random_num > HIT_FACTOR * opponent's luck
