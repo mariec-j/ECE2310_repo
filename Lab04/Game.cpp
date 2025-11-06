@@ -34,8 +34,8 @@ void Game::generatePlayers(int n) {
  * @return int = index for vector, players 
  */
 int Game::selectPlayer() {
-    static random_device rd;
-    static mt19937 gen(rd());
+	unsigned rd = chrono::system_clock::now().time_since_epoch().count();
+    mt19937 gen(rd);
     // make a distribution of all ints of 0 up to live_players.size() - 1 
     uniform_int_distribution<> dist(0, live_players.size() - 1);
 

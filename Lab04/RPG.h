@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <random>
+#include <chrono>
 
 #ifndef RPG_H
 #define RPG_H

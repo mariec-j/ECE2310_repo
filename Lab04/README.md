@@ -46,3 +46,11 @@ Random Number Generator not working
     - Would cause an infinitely recursive loop in `battleRound()`
 - Hopefully no issue in putting static there
 - Otherwise the code is functional and probably ready to demo
+
+### 11/06/25 - 3:30pm - <10 spent
+
+Utilizing `<chrono>` to make random generator
+- Chrono makes it so that a clock is used for seed generation
+- makes it more random
+- Everytime program runs it will actually be randomized
+- Thank you cplusplus.com

@@ -91,7 +91,7 @@ void RPG::setName(string name) {
  *       increase luck by 0.1
  */
 void RPG::updateExpLevel() {
-    exp += 50.0;
+    exp += 50.0; 
     if (exp >= 100.0) {
         level++;
         exp = 0;
@@ -109,8 +109,8 @@ void RPG::updateExpLevel() {
  * @param opponent 
  */
 void RPG::attack(RPG* opponent) {
-    static random_device rand;
-    static mt19937 gener(rand()); // seed with random, is static throughout run
+    unsigned rd = chrono::system_clock::now().time_since_epoch().count();
+    mt19937 gener(rd); // seed with random, is static throughout run
     uniform_real_distribution<double> dis(0.1, 1.0);
 
     float random_num = dis(gener);
